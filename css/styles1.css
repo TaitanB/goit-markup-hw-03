@@ -8,7 +8,6 @@
   --btn-active-color: #188ce8;
   --background-dark: #2f303a;
   --background-light: #f5f4fa;
-  --portfolio-set-gap: 30px;
 }
 
 body {
@@ -26,12 +25,6 @@ h3,
 p {
   margin: 0;
   padding: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .current {
@@ -65,6 +58,7 @@ img {
 .list-nav {
   margin-top: 32px;
   margin-bottom: 32px;
+  margin-right: 294px;
 }
 
 .logo-nav {
@@ -111,7 +105,6 @@ img {
   width: 307px;
   padding: 0;
   margin: 32px 0;
-  margin-left: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -188,7 +181,6 @@ img {
   line-height: 1.143;
   text-transform: uppercase;
   color: var(--title-text-color);
-  margin-bottom: 10px;
 }
 
 .features-descr {
@@ -293,9 +285,6 @@ img {
 }
 
 /* portfolio styles */
-.header {
-  border-bottom: 1px solid #ececec;
-}
 
 .portfolio-title {
   font-weight: 700;
@@ -303,20 +292,22 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  margin-bottom: 4px;
+  margin: 0;
 }
 
 .portfolio-descr {
   font-size: 16px;
   line-height: 1.875;
   color: var(--text-color-theme-light);
+  margin: 0;
+}
+
+.portfolio-list {
+  border: 1px solid #eeeeee;
 }
 
 .wraper {
   padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio-nav {
@@ -329,7 +320,6 @@ img {
 
 .portfolio-btn {
   font-family: inherit;
-  letter-spacing: inherit;
   background: var(--background-light);
   font-weight: 500;
   font-size: 16px;
@@ -373,24 +363,15 @@ img {
 }
 
 .portfolio-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.portfolio-set {
+  height: 1272px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
   margin: 0;
   padding: 0;
-  margin-left: calc(-1 * var(--portfolio-set-gap));
-  margin-top: calc(-1 * var(--portfolio-set-gap));
 }
 
-.portfolio-set > .portfolio-list {
-  flex-basis: calc(100% / 3 - var(--portfolio-set-gap));
-  margin-left: var(--portfolio-set-gap);
-  margin-top: var(--portfolio-set-gap);
+.header {
+  border-bottom: 1px solid #ececec;
 }

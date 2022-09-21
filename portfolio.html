@@ -16,7 +16,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container wraper-head">
         <nav class="nav">
           <a class="logo-nav link" href="./index.html" lang="en"
             ><span class="logo-accent">Web</span>Studio</a
@@ -51,25 +51,25 @@
     </header>
     <main>
       <section class="portfolio section">
-        <h1 class="portf-title visually-hidden">Портфоліо</h1>
-        <ul class="portfolio-nav">
-          <li class="list">
-            <button class="portfolio-btn" type="button">Усі</button>
-          </li>
-          <li class="list">
-            <button class="portfolio-btn" type="button">Веб-сайти</button>
-          </li>
-          <li class="list">
-            <button class="portfolio-btn" type="button">Додатки</button>
-          </li>
-          <li class="list">
-            <button class="portfolio-btn" type="button">Дизайн</button>
-          </li>
-          <li class="list">
-            <button class="portfolio-btn" type="button">Маркетинг</button>
-          </li>
-        </ul>
         <div class="portfolio-container container">
+          <h1 class="portf-title visually-hidden">Портфоліо</h1>
+          <ul class="portfolio-nav">
+            <li class="list">
+              <button class="portfolio-btn" type="button">Усі</button>
+            </li>
+            <li class="list">
+              <button class="portfolio-btn" type="button">Веб-сайти</button>
+            </li>
+            <li class="list">
+              <button class="portfolio-btn" type="button">Додатки</button>
+            </li>
+            <li class="list">
+              <button class="portfolio-btn" type="button">Дизайн</button>
+            </li>
+            <li class="list">
+              <button class="portfolio-btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
           <ul class="portfolio-set">
             <li class="portfolio-list list">
               <img
@@ -198,32 +198,34 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo link" href="./index.html" lang="en"
-        ><span class="logo-accent">Web</span>Studio</a
-      >
-      <address>
-        <ul class="address">
-          <li class="list address-map">
-            <a
-              class="map link"
-              href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li class="list address-contacts">
-            <a class="contacts link" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li class="list address-contacts">
-            <a class="contacts link" href="tel:+380991111111"
-              >+38 099 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a class="logo link" href="./index.html" lang="en"
+          ><span class="logo-accent">Web</span>Studio</a
+        >
+        <address class="address">
+          <ul>
+            <li class="list address-map">
+              <a
+                class="map link"
+                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="list address-contacts">
+              <a class="contacts link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="list address-contacts">
+              <a class="contacts link" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
